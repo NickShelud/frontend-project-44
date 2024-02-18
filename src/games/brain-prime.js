@@ -17,7 +17,7 @@ export default function run() {
 
 function isPrime(digit) {
   for (let i = 2; i < digit; i += 1) {
-    if (digit % i == 0) {
+    if (digit % i == 0 && digit > 1) {
       return "no";
     }
   }
