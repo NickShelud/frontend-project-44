@@ -16,7 +16,7 @@ export default function run() {
   const answersAndQuestions = [];
 
   for (let i = 0; i < 3; i += 1) {
-    let digit = getRandomDigit();
+    const digit = getRandomDigit();
 
     answersAndQuestions[digit] = isPrime(digit);
   }
