@@ -11,7 +11,7 @@ export default function launchGame(task, dataForGame) {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === dataForGame[question]) {
+    if (String(userAnswer) === String(dataForGame[question])) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${dataForGame[question]}'.`);
