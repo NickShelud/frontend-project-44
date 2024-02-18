@@ -23,5 +23,5 @@ export default function launchGame(task, dataForGame) {
     }
   }
 
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 }
