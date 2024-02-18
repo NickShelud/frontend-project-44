@@ -8,6 +8,8 @@ function getCalculate(operation, firstDigit, secondDigit) {
       return firstDigit - secondDigit;
     case '*':
       return firstDigit * secondDigit;
+    default:
+      return 'error';
   }
 }
 

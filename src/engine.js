@@ -7,7 +7,7 @@ export default function launchGame(task, dataForGame) {
 
   console.log(task);
 
-  for (const question in dataForGame) {
+  for (const question of Object.keys(dataForGame)) {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 

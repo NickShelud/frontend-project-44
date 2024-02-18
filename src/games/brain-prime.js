@@ -12,9 +12,8 @@ function isPrime(digit) {
 }
 
 export default function run() {
-  const taskDescription =
-    'Answer "yes" if given number is prime. Otherwise answer "no".';
-  let answersAndQuestions = [];
+  const taskDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  const answersAndQuestions = [];
 
   for (let i = 0; i < 3; i += 1) {
     let digit = getRandomDigit();

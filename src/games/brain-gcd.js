@@ -21,7 +21,7 @@ export default function run() {
     const firstDigit = getRandomDigit();
     const secondDigit = getRandomDigit();
 
-    let task = `${firstDigit} ${secondDigit}`;
+    const task = `${firstDigit} ${secondDigit}`;
 
     gameData[task] = getGcd(firstDigit, secondDigit);
   }
