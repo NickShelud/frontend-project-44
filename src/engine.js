@@ -14,7 +14,7 @@ export default function launchGame(task, dataForGame) {
     if (String(userAnswer) === String(dataForGame[question])) {
         console.log('Correct!');
     } else {
-        console.log(`${userAnswer} is wrong answer ;(. Correct answer was '${dataForGame[question]}'.`);
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${dataForGame[question]}'.`);
         console.log(`Let's try again, ${name}!`);
         return;
     }
