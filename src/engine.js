@@ -7,19 +7,18 @@ export default function launchGame(task, dataForGame) {
 
   console.log(task);
 
-  Object.keys(dataForGame).forEach(question => {
+  Object.keys(dataForGame).forEach((question) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (String(userAnswer) === String(dataForGame[question])) {
-        console.log('Correct!');
+      console.log('Correct!');
     } else {
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${dataForGame[question]}'.`);
-        console.log(`Let's try again, ${name}!`);
-        process.exit(1);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${dataForGame[question]}'.`);
+      console.log(`Let's try again, ${name}!`);
+      process.exit(1);
     }
   });
-
 
   console.log(`Congratulations, ${name}!`);
 }
